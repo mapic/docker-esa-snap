@@ -1,7 +1,6 @@
 # Docker ESA Snap 7
 
-https://img.shields.io/docker/cloud/build/mapic/esa-snap.svg
-
+![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/mapic/esa-snap)
 
 ----------
 
