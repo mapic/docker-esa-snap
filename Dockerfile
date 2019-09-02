@@ -21,10 +21,6 @@ RUN ln -s /usr/local/snap/bin/gpt /usr/bin/gpt
 # set gpt max memory to 4GB
 RUN sed -i -e 's/-Xmx1G/-Xmx4G/g' /usr/local/snap/bin/gpt.vmoptions
 
-# add user
-RUN adduser -D airflow
-USER airflow
-
 # set entrypoint
 ENTRYPOINT ["/usr/local/snap/bin/gpt"]
 CMD ["-h"]
