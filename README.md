@@ -2,10 +2,7 @@
 
 ![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/mapic/esa-snap)
 ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/mapic/esa-snap)
-----------
 
-
-# docker-esa-snap
 
 ESA Sentinel and SMOS Toolboxes preinstalled container for Earth Observation processing and analysis.
 
@@ -15,12 +12,12 @@ ESA is developing free open source toolboxes for the scientific exploitation of 
 
 Contains: SNAP, S1TBX, S2TBX, S3TBX, SMOS Box, PROBA-V Toolbox.
 
-Get it from https://hub.docker.com/r/mrmoor/esa-snap/
+Get it from https://hub.docker.com/r/mapic/esa-snap
 
 
 Or get it via docker from the cmd:
 
-    docker pull mrmoor/esa-snap
+    docker pull mapic/esa-snap
   
   
 ## Python integration
