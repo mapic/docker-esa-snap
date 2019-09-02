@@ -1,7 +1,7 @@
 # Docker ESA Snap 7
 
 ![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/mapic/esa-snap)
-
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/mapic/esa-snap)
 ----------
 
 
