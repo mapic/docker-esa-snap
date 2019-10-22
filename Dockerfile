@@ -24,9 +24,10 @@ RUN ln -s /usr/local/snap/bin/gpt /usr/bin/gpt
 RUN sed -i -e 's/-Xmx1G/-Xmx4G/g' /usr/local/snap/bin/gpt.vmoptions
 
 # add airflow sudo user
-RUN groupadd -g 999 -r airflow && useradd --no-log-init --create-home -u 999 -r -g airflow airflow && usermod -aG sudo airflow
-USER 999:999
-
+# RUN groupadd -g 999 -r airflow && useradd --no-log-init --create-home -u 999 -r -g airflow airflow && usermod -aG sudo airflow
+# USER 999:999
+RUN groupadd -g 1000 -r airflow && useradd --no-log-init --create-home -u 1000 -r -g airflow airflow && usermod -aG sudo airflow
+USER 1000:1000
 
 # set entrypoint
 ENTRYPOINT ["/usr/local/snap/bin/gpt"]
